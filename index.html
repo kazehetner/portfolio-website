@@ -11,86 +11,112 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Oswald|Quattrocento" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i|Source+Sans+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
 
 
 
 </head>
 
 <header>
-    <nav class="sticky">
-        <ul class="navigation">
-            <li class="nav-logo"><a href="#"><img src="images/circle-half-tilt.svg"></a></li>
-            <li class="nav-item"><a href="#my-projects">my projects</a></li>
-            <li class="nav-item"><a href="#about-me">about me</a></li>
-        </ul>
+
+    <nav class="navigation">
+        <a href="#" class="nav-logo"><img src="images/circle-half-tilt.svg"></a>
+        <a href="#my-projects" class="nav-item">my projects</a>
+        <a href="#about-me" class="nav-item">about me</a>
     </nav>
     
     <h1>hello</h1>
-    <p>I am a Front-End Developer with 5+ years experience in digital marketing. My passion for websites, web applications, design & UX lead me to web development.</p>
+    <p class="teaser">I am a Front-End Developer with 5+ years experience in digital marketing. My passion for websites, web applications, design & UX lead me to web development.</p>
 </header>
 
-<section>
-    <h2 id="my-projects">my projects</h2>
+<h2 id="my-projects">personal <span class="cursive">projects</span></h2>
+
     <div>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
-
-    <div>
-        <h3>project 1</h3>
+<section class="project-parent">
+    <div class="project-container">
+        <h3>Index Calculator</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
 
-    <div>
-        <h3>project 2</h3>
+    <div class="project-container">
+        <h3>Plant Watering App</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
 
-    <div>
-        <h3>project 3</h3>
+    <div class="project-container">
+        <h3>Learn Japanese</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
-
 </section>
 
-<section>
-    <h2 id="about-me">about me</h2>
+<section class="skills">
+    <p>HTML</p>
+    <img src="images/asterisk.svg">
+    <p>CSS</p>
+    <img src="images/asterisk.svg">
+    <p>JavaScript</p>
+    <img src="images/asterisk.svg">
+    <p>React</p>
+    <img src="images/asterisk.svg">
+    <p>Redux</p>
+</section>
+
+
+    <h2 id="about-me">about <span class="cursive">me</span></h2>
+
+<section class="about-container">
 
     <div>
-        <img src="images/kzehetner.jpeg">
+        <img src="images/kzehetner.jpeg" class="about-img">
     </div>
 
-    <div>
+    <div class="about-text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
 
+</section>
+
+<section class="hobby-container">
+
     <div>
-        <p>30+ plants and counting</p>
+        <img src="images/leaf.svg">
+        <p>Owns 30+ plants and counting</p>
     </div>
 
     <div>
+        <img src="images/book.svg">
         <p>Lorem ipsum dolor sit amet</p>
     </div>
 
     <div>
+        <img src="images/globe.svg">
         <p>Lorem ipsum dolor sit amet</p>
     </div>
 
 </section>
 
+    <hr>
 <footer>
-    <div>
+    <section class="footer-section">
+    <div class="work-with-me">
         <p> Want to work with me?</p>
-        <p>BRIEF ME</p>
+        <p class="brief-me">brief me</p>
     </div>
 
-    <div>
+    <div class="friends">
         <p>Let's be internet friends.</p>
-        <img src="images/paper-plane-tilt.svg">
-        <img src="images/linkedin-logo.svg">
-        <img src="images/github-logo.svg">
+        <div>
+            <img src="images/paper-plane-tilt.svg">
+            <img src="images/linkedin-logo.svg">
+            <img src="images/github-logo.svg">
+        </div>
 
     </div>
+    </section>
+    <p class="copyright">copyright by katharina zehetner</p>
 </footer>
 
 <body>

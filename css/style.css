@@ -1,12 +1,10 @@
-
-
-
-/* BASICS */
+/* GLOBAL */
 
 html {
     width: 100%;
     max-width: 60rem;
     margin: auto;
+    font-size: 16px;
 }
 
 h1,
@@ -15,25 +13,38 @@ h3 {
     font-family: 'Chivo', sans-serif;
 }
 
-p, 
-li {
+h2 {
+    font-size: 2rem;
+}
+
+.cursive {
+    font-family: 'Playfair Display', serif;
+}
+
+p,
+a {
     font-family: 'Quattrocento', Serif;
-    font-size: 16px;
 }
 
 /* NAVIGATION */
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 1.5rem 0rem;
-  }
 
 .navigation {
     display: flex;
     align-items: stretch;
     width: 100%;
     overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 1.5rem 0rem;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #1D1F20;
+}
+
+.navigation img {
+    width: 2rem;
 }
 
 .nav-logo {
@@ -47,15 +58,144 @@ ul {
     justify-content: flex-end;
 }
 
-li img {
-    width: 2rem;
-}
-
-li a {
-    text-decoration: none;
-    color: #1D1F20;
-}
-
-li a:hover {
+.nav-item:hover {
+    transition: padding-top 400ms;
     padding-top: 0.5rem;
+}
+
+/* Header Section */
+
+h1 {
+    font-size: 7rem;
+    padding-top: 3.75rem;
+}
+
+.teaser {
+    font-size: 2.5rem;
+    padding-left: 5rem;
+    padding-bottom: 9.375rem;
+}
+
+/* MY PROJECTS SECTION */
+
+.project-parent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
+}
+
+.project-container {
+    display: flex;
+    flex-basis: 30%;
+    padding: 0.625rem;
+    background-color: #EBEBEB;
+    border-radius: 0.438rem;
+    height: 12.5rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.project-container:hover {
+    transition: background-color 400ms;
+    background-color: #FFD527;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 9.375rem;
+}
+
+.skills p {
+    font-family: 'Playfair Display', serif;
+}
+
+.skills img {
+    width: 1rem;
+}
+
+/* ABOUT ME SECTION */
+
+.about-container {
+    display: flex;
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
+    justify-content: space-between;
+}
+
+.about-img {
+    border-radius: 6.25rem;
+}
+
+.about-text {
+    width: 75%;
+}
+
+.hobby-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.125rem;
+    margin-bottom: 9.375rem;
+}
+
+.hobby-container img {
+    width: 4rem;
+}
+
+.hobby-container div {
+    display: flex;
+    flex-basis: 30%;
+    padding: 0.625rem;
+    background-color: #EBEBEB;
+    border-radius: 0.438rem;
+    height: 12.5rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hobby-container div:hover {
+    transition: background-color 400ms;
+    background-color: #FFD527;
+}
+
+/* FOOTER */
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+    margin-bottom: 9.375rem;
+    padding-bottom: 3.125rem;
+}
+
+.work-with-me {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+}
+
+.brief-me {
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    margin-top: 0;
+}
+
+.friends {
+    display: flex;
+    align-items: right;
+    flex-direction: column;
+}
+
+.friends img {
+    width: 2rem;
+    margin-left: 2rem;
+}
+
+.copyright {
+    text-align: center;
+    padding-bottom: 3.125rem;
 }
