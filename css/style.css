@@ -1,0 +1,61 @@
+
+
+
+/* BASICS */
+
+html {
+    width: 100%;
+    max-width: 60rem;
+    margin: auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Chivo', sans-serif;
+}
+
+p, 
+li {
+    font-family: 'Quattrocento', Serif;
+    font-size: 16px;
+}
+
+/* NAVIGATION */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1.5rem 0rem;
+  }
+
+.navigation {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    overflow: hidden;
+}
+
+.nav-logo {
+    flex-grow: 9;
+}
+
+.nav-item {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+li img {
+    width: 2rem;
+}
+
+li a {
+    text-decoration: none;
+    color: #1D1F20;
+}
+
+li a:hover {
+    padding-top: 0.5rem;
+}

@@ -9,16 +9,20 @@
   <meta name="author" content="Katharina Zehetner - Front-End Developer">
 
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Quattrocento" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i|Source+Sans+Pro" rel="stylesheet">
+
+
 
 </head>
 
 <header>
-    <nav>
-        <img src="images/circle-half.svg">
-
-        <ul>
-            <li><a href="#my-projects">my projects</a></li>
-            <li><a href="about-me">about me</a></li>
+    <nav class="sticky">
+        <ul class="navigation">
+            <li class="nav-logo"><a href="#"><img src="images/circle-half-tilt.svg"></a></li>
+            <li class="nav-item"><a href="#my-projects">my projects</a></li>
+            <li class="nav-item"><a href="#about-me">about me</a></li>
         </ul>
     </nav>
     
@@ -27,7 +31,7 @@
 </header>
 
 <section>
-    <h2>my projects</h2>
+    <h2 id="my-projects">my projects</h2>
     <div>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
@@ -50,7 +54,7 @@
 </section>
 
 <section>
-    <h2>about me</h2>
+    <h2 id="about-me">about me</h2>
 
     <div>
         <img src="images/kzehetner.jpeg">
