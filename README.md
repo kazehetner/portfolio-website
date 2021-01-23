@@ -5,7 +5,7 @@ This is a simple portfolio website for a junior web developer that provides the 
 ## Table of contents
 
 * [General Information] (#general-info)
-* Technologies
+* [Technologies] (#Technologies)
 * Setup
 * Features
 * Status
