@@ -21,9 +21,15 @@ h2 {
     font-family: 'Playfair Display', serif;
 }
 
+.yellow {
+    color: #FFD527;
+}
+
 p,
 a {
     font-family: 'Quattrocento', Serif;
+    font-size: 1.125rem;
+    line-height: 1.5;
 }
 
 /* NAVIGATION */
@@ -45,6 +51,12 @@ a {
 
 .navigation img {
     width: 2rem;
+}
+
+.navigation img:hover {
+        transition: background-color 400ms;
+        background-color: #FFD527;
+        border-radius: 6.26rem;
 }
 
 .nav-logo {
@@ -74,6 +86,7 @@ h1 {
     font-size: 2.5rem;
     padding-left: 5rem;
     padding-bottom: 9.375rem;
+    line-height: 1;
 }
 
 /* MY PROJECTS SECTION */
@@ -87,9 +100,10 @@ h1 {
 
 .project-container {
     display: flex;
-    flex-basis: 30%;
-    padding: 0.625rem;
-    background-color: #EBEBEB;
+    flex-basis: 29.5%;
+    padding: 50px 10px;
+    background-color: white;
+    border: 1.5px solid black;
     border-radius: 0.438rem;
     height: 12.5rem;
     align-items: center;
@@ -98,6 +112,8 @@ h1 {
 }
 
 .project-container:hover {
+    transition: border 400ms;
+    border: 1.5px solid #FFD527;
     transition: background-color 400ms;
     background-color: #FFD527;
 }
@@ -148,12 +164,12 @@ h1 {
     display: flex;
     flex-basis: 30%;
     padding: 0.625rem;
-    background-color: #EBEBEB;
-    border-radius: 0.438rem;
     height: 12.5rem;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    border-radius: 7px;
+    background-color: #EBEBEB;
 }
 
 .hobby-container div:hover {
@@ -167,8 +183,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     margin-top: 1.25rem;
-    margin-bottom: 9.375rem;
-    padding-bottom: 3.125rem;
+    margin-bottom: 7.5rem;
 }
 
 .work-with-me {
@@ -184,15 +199,28 @@ h1 {
     margin-top: 0;
 }
 
+.brief-me:hover {
+    transition: background-color 400ms;
+    background-color: #FFD527;
+    border-radius: 6.25rem;
+}
+
 .friends {
     display: flex;
-    align-items: right;
     flex-direction: column;
+    align-items: flex-end;
 }
 
 .friends img {
-    width: 2rem;
-    margin-left: 2rem;
+    width: 2.5rem;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+.friends img:hover {
+    transition: background-color 400ms;
+    background-color: #FFD527;
+    border-radius: 6.25rem;
 }
 
 .copyright {
