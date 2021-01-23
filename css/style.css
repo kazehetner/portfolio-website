@@ -51,12 +51,14 @@ a {
 
 .navigation img {
     width: 2rem;
+    padding: 0.3rem 0.3rem;
 }
 
 .navigation img:hover {
         transition: background-color 400ms;
         background-color: #FFD527;
         border-radius: 6.26rem;
+        padding: 0.3rem 0.3rem;
 }
 
 .nav-logo {
@@ -122,6 +124,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 9.375rem;
+    margin-top: 3.125rem;
 }
 
 .skills p {
@@ -129,7 +132,7 @@ h1 {
 }
 
 .skills img {
-    width: 1rem;
+    height: 4rem;
 }
 
 /* ABOUT ME SECTION */
@@ -142,11 +145,12 @@ h1 {
 }
 
 .about-img {
-    border-radius: 6.25rem;
+    border-radius: 15rem;
+    width: 15rem;
 }
 
 .about-text {
-    width: 75%;
+    width: 66.6%;
 }
 
 .hobby-container {
@@ -158,23 +162,19 @@ h1 {
 
 .hobby-container img {
     width: 4rem;
+    padding: 0.6rem 0.6rem;
+    background-color: #FFD527;
+    border-radius: 6.25rem;
 }
 
 .hobby-container div {
     display: flex;
-    flex-basis: 30%;
-    padding: 0.625rem;
+    flex-basis: 29.5%;
+    padding: 50px 10px;
     height: 12.5rem;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
-    border-radius: 7px;
-    background-color: #EBEBEB;
-}
-
-.hobby-container div:hover {
-    transition: background-color 400ms;
-    background-color: #FFD527;
+    justify-content: left;
 }
 
 /* FOOTER */
