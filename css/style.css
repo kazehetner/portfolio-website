@@ -32,6 +32,14 @@ a {
     line-height: 1.5;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
 /* NAVIGATION */
 
 .navigation {
@@ -42,6 +50,7 @@ a {
     list-style-type: none;
     margin: 0;
     padding: 1.5rem 0rem;
+    background-color: white;
 }
 
 .navigation a {
@@ -91,10 +100,16 @@ h1 {
     line-height: 1;
 }
 
+header {
+    height: 100%;
+    background: linear-gradient(60deg, white 50%, #FFD527 50%);
+}
+
 /* MY PROJECTS SECTION */
 
 .project-parent {
-    display: flex;
+    display: inline-flex;
+    flex-flow: row wrap;
     justify-content: space-between;
     margin-top: 3.125rem;
     margin-bottom: 3.125rem;
@@ -102,10 +117,9 @@ h1 {
 
 .project-container {
     display: flex;
-    flex-basis: 29.5%;
-    padding: 50px 10px;
-    background-color: white;
-    border: 1.5px solid black;
+    flex-basis: 30%;
+    padding: 3.125rem 0.625rem;
+    border: 0.094rem solid black;
     border-radius: 0.438rem;
     height: 12.5rem;
     align-items: center;
@@ -115,9 +129,10 @@ h1 {
 
 .project-container:hover {
     transition: border 400ms;
-    border: 1.5px solid #FFD527;
+    border: 0.094rem solid #FFD527;
     transition: background-color 400ms;
     background-color: #FFD527;
+    cursor: pointer;
 }
 
 .skills {
@@ -127,12 +142,20 @@ h1 {
     margin-top: 3.125rem;
 }
 
-.skills p {
+.skills a p {
     font-family: 'Playfair Display', serif;
+    color: black;
+    margin: 0rem auto;
+}
+
+.skills a:hover {
+    transition: background-color 400ms;
+    background-color: #FFD527;
+    border-radius: 6.25rem; 
 }
 
 .skills img {
-    height: 4rem;
+    height: 1rem;
 }
 
 /* ABOUT ME SECTION */
@@ -153,6 +176,17 @@ h1 {
     width: 66.6%;
 }
 
+.about-text a {
+    color: black;
+    text-decoration: underline;
+}
+
+.about-text a:hover {
+    transition: background-color 400ms;
+    background-color: #FFD527;
+    border-radius: 6.25rem; 
+}
+
 .hobby-container {
     display: flex;
     justify-content: space-between;
@@ -170,11 +204,22 @@ h1 {
 .hobby-container div {
     display: flex;
     flex-basis: 29.5%;
-    padding: 50px 10px;
+    padding: 3.125rem 0.625rem;
     height: 12.5rem;
     align-items: center;
     flex-direction: column;
     justify-content: left;
+}
+
+.hobby-container a {
+    color: black;
+    text-decoration: underline;
+}
+
+.hobby-container a:hover {
+    transition: background-color 400ms;
+    background-color: #FFD527;
+    border-radius: 6.25rem; 
 }
 
 /* FOOTER */
@@ -183,7 +228,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     margin-top: 1.25rem;
-    margin-bottom: 7.5rem;
+    margin-bottom: 5rem;
 }
 
 .work-with-me {
