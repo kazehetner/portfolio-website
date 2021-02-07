@@ -42,6 +42,93 @@ a:hover {
 
 /* NAVIGATION */
 
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: white;
+}
+
+nav img {
+    width: 2rem;
+    padding: 0.3rem 0.3rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 1.563rem;
+    height: 0.125rem;
+    background-color: black;
+    margin: 0.313rem;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .nav-links {
+        position: absolute;
+        right: 0rem;
+        height: 92vh;
+        top: 7vh;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/*
 .navigation {
     display: flex;
     align-items: stretch;
@@ -64,10 +151,10 @@ a:hover {
 }
 
 .navigation img:hover {
-        transition: background-color 400ms;
-        background-color: #FFD527;
-        border-radius: 6.26rem;
-        padding: 0.3rem 0.3rem;
+    transition: background-color 400ms;
+    background-color: #FFD527;
+    border-radius: 6.26rem;
+    padding: 0.3rem 0.3rem;
 }
 
 .nav-logo {
@@ -85,6 +172,9 @@ a:hover {
     transition: padding-top 400ms;
     padding-top: 0.5rem;
 }
+
+*/
+
 
 /* Header Section */
 
@@ -167,9 +257,10 @@ header {
     justify-content: space-between;
 }
 
-.about-img {
+#about-img {
     border-radius: 15rem;
     width: 15rem;
+    background-color: #FFD527;
 }
 
 .about-text {
